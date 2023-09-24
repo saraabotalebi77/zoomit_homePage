@@ -1,0 +1,115 @@
+.w-100{
+    width : 100%;
+}
+.h-100{
+    height : 100%;
+}
+.d-block{
+    display: block;
+}
+.d-inline-block{
+    display: inline-block;
+}
+.d-none{
+    display: none;
+}
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position : absolute;
+}
+.float-right {
+    float : right;
+}
+.float-left{
+    float : left;
+}
+.clearfix::after{
+    content :"";
+    display: block;
+    clear : both;
+}
+.overflow-hidden{
+    overflow:hidden;
+}
+.vertical-top{
+    vertical-align: top;
+}
+.vertical-middle{
+    vertical-align: middle;
+}
+.text-center{
+    text-align : center;
+}
+.rounded-50Per{
+    border-radius : 50%;
+}
+.cursor-pointer{
+    cursor : pointer;
+}
+.ff-sahel{
+    font-family : sahel;
+}
+.fs-0{
+    font-size : 0;
+}
+.fs-4{
+    font-size : 1.2rem;
+}
+.fs-3{
+    font-size : 1.4rem;
+}
+.fs-2{
+    font-size :1.6rem;
+}
+.fs-1{
+    font-size : 2.2rem;
+}
+.fw-bold{
+    font-weight : 700;
+}
+.fw-bolder{
+    font-weight : 900;
+}
+.fw-light{
+    font-weight : 300;
+}
+.color-gray-02{
+    color : var(--color-gray-02)
+}
+.color-gray-01{
+    color : var(--color-gray-01)
+}
+.bg-secondary{
+    background-color : var(--secondary-color);
+}
+.mt-40{
+    margin-top : 4rem;
+}
+.mb-25{
+    margin-bottom : 2.5rem;
+}
+.mx-auto{
+    margin : auto;
+}
+.py-10{
+    padding-top : 1rem;
+    padding-bottom : 1rem;
+}
+.pt-10{
+    padding-top : 1rem;
+}
+.pb-10{
+    padding-bottom : 1rem;
+}
+.px-20{
+    padding-right : 2rem;
+    padding-left : 2rem;
+}
+.pr-20{
+    padding-right : 2rem;
+}
+.pl-20{
+    padding-left : 2rem;
+}

@@ -1,0 +1,161 @@
+@font-face {
+  font-family: vazir;
+  font-weight: 300;
+  src: url("../fonts/vazir/Vazirmatn-FD-ExtraLight.ttf");
+}
+@font-face {
+  font-family: vazir;
+  font-weight: 400;
+  src: url("../fonts/vazir/Vazirmatn-FD-Regular.ttf");
+}
+@font-face {
+  font-family: vazir;
+  font-weight: 700;
+  src: url("../fonts/vazir/Vazirmatn-FD-ExtraBold.ttf");
+}
+@font-face {
+  font-family: vazir;
+  font-weight: 900;
+  src: url("../fonts/vazir/Vazirmatn-FD-Black.ttf");
+}
+@font-face {
+  font-family: sahel;
+  src: url("../fonts/sahel/Sahel-Bold-FD.eot");
+  src: url("../fonts/sahel/Sahel-Bold-FD.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/sahel/Sahel-Bold-FD.woff2") format("woff2"),
+    url("../fonts/sahel/Sahel-Bold-FD.woff") format("woff"),
+    url("../fonts/sahel/Sahel-Bold-FD.ttf") format("truetype");
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+}
+.light:root {
+  --primary-color: #f9f9f9;
+  --secondary-color: #fff;
+  --red: #e4002b;
+  --text-hover : #e4002b;
+  --border-color: #eeeeee;
+  --color-gray-01 : #383e43;
+  --color-gray-02 : #7d7d87;
+  --header--text-color : #383e43;
+  --header-bg : #fff;
+  --header--responsive-menu-bg : #fff;
+  --header--search-icon-bg: #fff;
+  --header--search-icon: #32323c;
+  --header--sub-menu-bg: #fff;
+  --header--sub-menu-shadow: #e4e4e4;
+  --header--menu-close-icon-bg: #333536;
+  --header--account-icon-bg: #7d7d87;
+  --header--login-register-popup-content-bg :#fff;
+  --header--login-register-popup-footer-bg :#f9f9f9;
+  --header--responsive-menu--active-theme-wrapper-bg :#1d1f20;
+  --badge-text :#ffffff;
+  --badge-bg : #32323c;
+  --outline-btn--border : #eee;
+
+
+
+  --slider-button-color:rgb(150,150,160);
+  --slider-button-hover-color:rgb(58,58,56);
+  --background-color-scrollbar-track: #eeeeee;
+  --background-color-scrollbar-thumb-hover: #7d7d87;
+  --box-shadow-color : #383e4330;
+  --post-bg : #fff;
+  --footer--line-bg : #32323c;
+}
+.dark:root {
+  --primary-color: #202425;
+  --secondary-color: #1d1f20;
+  --red: #e4002b;
+  --text-hover : #ff6961;
+  --border-color: #3a3a3a;
+  --color-gray-01 : #e8e2d8;
+  --color-gray-02 : #eee;
+  --header--text-color : #e8e2d8;
+  --header-bg :#1d1f20;
+  --header--responsive-menu-bg :#1d1f20;
+  --header--search-icon-bg: #32323c;
+  --header--search-icon: #fff;
+  --header--sub-menu-bg: #303536;
+  --header--sub-menu-shadow: #191c1d;
+  --header--menu-close-icon-bg: rgb(248, 248, 248);
+  --header--account-icon-bg: #eee;
+  --header--login-register-popup-content-bg :#292C2D;
+  --header--login-register-popup-footer-bg :#202425;
+  --header--responsive-menu--active-theme-wrapper-bg : rgba(255, 255, 255, 0.063);
+  --badge-text :#E8E2D8;
+  --badge-bg :#383737;
+  --outline-btn--border : #4b4b55;
+
+  --slider-button-color:#9696a0;
+  --slider-button-hover-color:#3a3a38;
+  --background-color-scrollbar-track: #1d1f20;
+  --background-color-scrollbar-thumb-hover: #eeeeee;
+  --box-shadow-color : #1c19193d;
+  --post-bg : #292C2D;
+  --footer--line-bg : #afafb6;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  scrollbar-color: #afafb6 rgb(238, 238, 238);
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--background-color-scrollbar-track);
+  border-left: 0.5px solid var(--border-color);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0.8rem;
+  background-color:#afafb6;
+}
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--background-color-scrollbar-thumb-hover);
+}
+body {
+  direction: rtl;
+  width: 100%;
+  font-family: vazir;
+  font-weight: 400;
+  font-size: 1.4rem;
+  background-color: var(--primary-color);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button,
+input{
+  font-family: vazir;
+  border: none;
+  outline: none;
+}
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+@media only screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 0.3rem;
+    border: none;
+  }
+}

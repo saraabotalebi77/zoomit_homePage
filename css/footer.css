@@ -1,0 +1,96 @@
+.footer{
+    background-color : var(--secondary-color);
+}
+.dark .footer-content-wrapper{
+    background-image : url("../images/bg-footer-dark.svg");
+}
+.light .footer-content-wrapper{
+    background-image : url("../images/bg-footer-light.svg")
+}
+.footer-content-wrapper{
+    background-repeat: no-repeat;
+    background-position: center center; 
+    border-top : 1px solid var(--border-color);
+}
+.footer-content{
+    padding-top : 8rem;
+    padding-bottom : 4rem;
+}
+.zoomit-advocates{
+    width : 25%;
+    margin-top : 2rem
+}
+.zoomit-family{
+    width : 50%;
+    margin-top : 2rem;
+}
+.zoomit-about-menu{
+    width : 25%;
+    padding-top : 2.2rem;
+    margin-top : 2rem;
+}
+.zoomit-about-menu:before{
+    content:"";
+    position : absolute;
+    top : 1rem;
+    right :0;
+    width : 5rem;
+    height : 0.4rem;
+    background-color: var(--red);
+}
+.zoomit-advocates-menu-item:first-child,
+.zoomit-about-menu-item:first-child,
+.zoomit-family-menu-item{
+    margin-top : 2rem;
+}
+.zoomit-family-menu-item{
+    margin-left : 1.5rem;
+}
+.footer-footnote{
+    padding-top : 2rem;
+    padding-bottom : 2rem;
+}
+.social-networks-menu-item{
+    margin-right : 0.5rem;
+    margin-left : 0.5rem;
+}
+.footer-line{
+    width : 100%;
+    height : 0.7rem;
+    border : none;
+    background-color: var(--footer--line-bg);
+}
+@media only screen and (max-width:992px){
+    .footer-content{
+        padding-top : 5rem;
+        padding-bottom: 5rem;
+    }
+    .zoomit-about-menu,
+    .zoomit-advocates{
+        width : 50%;
+        text-align: center;
+    }
+    .zoomit-about-menu:before{
+        right : 50%;
+        transform: translateX(50%);
+    }
+    .zoomit-family{
+        width : 100%;
+        text-align : center
+    }
+    .copyRight-text,
+    .social-networks-menu{
+        float : none;
+        width : 100%;
+        margin-bottom : 1rem;
+    }
+}
+@media only screen and (max-width:576px){
+    .footer-content{
+        padding-bottom: 5rem;
+    }
+    .zoomit-about-menu,
+    .zoomit-advocates{
+        width : 100%;
+    }
+}
